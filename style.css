@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+/* header Styling */
+
+header span{
+    /* color: rgb(96, 96, 96); */
+    color: #000000;
+}
+
+header{
+    background-color: white;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 15px;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+
+.header-left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.header-left .menu-icon{
+    background-color: #f2efef;
+    border-radius: 50%;
+    padding: 6px;
+    border: none;
+    transition: 0.1s ease-in-out;
+}
+
+.header-left .menu-icon:hover{
+   
+    background-color: #ddd;
+    transition: 0.1s ease-in-out;
+}
+
+
+.header-left .yt-logo{
+    width: 100px;
+    margin-left: 15px;
+}
+
+header span{
+   padding: 0px 7px;
+   cursor: pointer;
+}
+
+.header-search{
+    display: flex;
+    align-items: center;
+}
+
+
+.header-search form{
+    border: 1.8px solid #ddd;
+    border-radius: 40px 40px 40px 40px;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.header-search input::placeholder{
+    font-size: 15px;
+    position: relative;
+    left: 5px;
+}
+.header-search input{
+    width: 600px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 40px 0px 0px 40px;
+    border: none;
+}
+
+.header-search button{
+    background-color: #f2efef;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border: none;
+    border-radius: 0 40px 40px 0;
+    transition: 0.1s ease-in-out;
+}
+
+.search-mike{
+    font-size: 32px;
+    border-radius: 100%;
+    background-color: #f2efef;
+    border: none;
+    margin-left: 10px;
+    padding: 1px;
+    transition: 0.1s ease-in-out;
+}
+
+.header-search button:hover, .search-mike:hover{
+    background-color: #ddd;
+    transition: 0.1s ease-in-out;
+}
+
+.header-icons{
+    display: flex;
+    gap: 10px;
+}
+
+.header-icons div{
+    border: none;
+    transition: 0.1s ease-in-out;
+}
+
+.header-icons span,.vid-svg {
+    padding: 10px;
+    transition: 0.1s ease-in-out;
+}
+
+.header-icons span:hover,.header-icons div:hover{
+    border-radius: 100%;
+    background-color: #ddd;
+    transition: 0.1s ease-in-out;
+}
+
+
+/* Header Section Ends Here */
+
+
+
+/* Sidebar Starts */
+
+.sidebar{
+    display: flex;
+}
+
+.sidebar-categories{
+    background-color: white;
+    margin-left: 4px;
+    height: 90vh;
+    width: 70px;
+    display: flex;
+    flex-direction: column;     
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    top: 70px;
+}
+
+.sidebar-icon-box{
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 64px;
+    height: 74px;
+    justify-content: center;  
+    cursor: pointer;
+}
+
+/* .sidebar-icon-box p{}
+  /* position: relative; */
+  
+
+
+.sidebar-icon-box:hover{
+    background-color: #ebebeb;
+}
+
+.sidebar-category p{
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+.sidebar-category{
+    /* margin: 10px 5px; */
+    height: 24px;
+    width: 24px;
+}
+/* Sidebar Ends */
+
+/* Video Section Starts */
+.video-section{
+    height: 1700px;
+    width: 100%;
+    margin-left: 15px;
+
+}
+
+.menu-buttons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 56px;
+    position: sticky;
+    background-color: white;
+    z-index: 100;
+    top: 4.36rem;
+}
+
+.menu-buttons div{
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.menu-buttons div:hover{
+    background-color: #ddd;
+    transition: 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.btn{
+    padding: 10px 15px;
+    font-weight: 540;
+    border-radius: 10px;
+    border: none;
+    height: 32px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.btn:hover{
+  background-color: #dfdfdf;
+  transition: 0.1s ease-in-out;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.dark:hover{
+    background-color: black;
+    color: white;
+}
+
+.videos{
+    margin-left: 20px;
+    margin-top: 40px;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.video-container{
+    
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-details{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+
+.video-thumbnail img{
+    height: 200px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+}
+
+.video-thumbnail img:hover{
+  border-radius: 0px;
+  transition: 0.2s ease-in-out;
+}
+
+.profile-pic img{
+    border-radius: 50px ;
+    width: 36px;
+}
+
+.video-descriprion {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.video-descriprion p span{
+    font-size: 16px;
+    position: relative;
+    top: 3px;
+    
+}
+
+.video-descriprion p{
+  color: #606060;
+  font-size: 14px;
+}
+/* Video Section Ends */
+
+
+/* Responsive design */
+
+@media(max-width:425px){
+
+    .header-left .menu-icon span{
+        font-size: 36px;
+    }
+
+    .header-left .menu-icon img{
+        height: 48px;
+    }
+
+    .header-search button{
+        background: none;
+        position: relative;
+        left: 50px;
+        background-color: #dfdfdf;
+        border-radius: 50%;
+    }
+
+    .header-search form{
+        border: none;
+    }
+
+    .account-circle span{
+        display: inline;
+        
+        font-size: 36px;
+    }
+
+    .sidebar-categories{
+        display: none;
+    }
+
+
+    .video-section{
+        /* overflow: hidden; */
+        width: 425px;
+        margin-left: 15px;
+    
+    }
+
+    .videos{ 
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .video-container{
+        width: 400px;
+    }
+
+    .video-thumbnail img{
+        
+        height: 200px;
+        border-radius: 15px;
+    }
+
+    .profile-pic img{
+        border-radius: 50px ;
+        width: 54px;
+    }
+
+    .video-descriprion {
+        font-size: 24px;
+        font-weight: 500;
+    }
+    
+    .video-descriprion p span{
+        font-size: 20px;
+        
+    }
+    
+    .video-descriprion p{
+      font-size: 18px;
+     }
+
+     .menu-buttons{
+        position: sticky;
+        top: 70px;
+        z-index: 1000;
+     }
+
+     .menu-buttons div span{
+        position: relative;
+        right: 15px;
+     }
+
+     .hidden{
+        display: none;
+     }
+
+     header{
+        position: sticky;
+        top: 0px;
+        z-index: 1687;
+        
+     }
+
+     
+}
