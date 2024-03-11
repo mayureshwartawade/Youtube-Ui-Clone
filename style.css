@@ -328,7 +328,7 @@ header span{
         background: none;
         position: relative;
         left: 50px;
-        background-color: #dfdfdf;
+        /* background-color: #dfdfdf; */
         border-radius: 50%;
     }
 
@@ -338,7 +338,8 @@ header span{
 
     .account-circle span{
         display: inline;
-        
+        position: relative;
+        right: 0;
         font-size: 36px;
     }
 
@@ -390,7 +391,7 @@ header span{
      }
 
      .menu-buttons{
-        position: sticky;
+        position: fixed;
         top: 70px;
         z-index: 1000;
      }
@@ -405,7 +406,7 @@ header span{
      }
 
      header{
-        position: sticky;
+        position: fixed;
         top: 0px;
         z-index: 1687;
         
